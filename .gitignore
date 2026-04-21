@@ -13,3 +13,6 @@ dist/
 # Editor
 .vscode/
 .idea/
+
+# Firmware credentials
+firmware/config.h
