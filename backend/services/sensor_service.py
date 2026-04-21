@@ -1,6 +1,6 @@
 from sqlalchemy.orm import Session
 from sqlalchemy import desc
-from datetime import datetime, timedelta
+from datetime import datetime, timedelta, timezone
 from typing import List, Optional
 
 from backend.models.sensor_data import SensorData
@@ -39,7 +39,7 @@ def obtener_historial(
     limit:     int = 100,
     hours:     int = 24,
 ) -> List[SensorData]:
-    cutoff = datetime.utcnow() - timedelta(hours=hours)
+    cutoff = datetime.now(timezone.utc) - timedelta(hours=hours)
 
     query = db.query(SensorData).filter(
         SensorData.timestamp >= cutoff
