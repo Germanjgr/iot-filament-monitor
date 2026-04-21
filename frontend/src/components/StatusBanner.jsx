@@ -71,7 +71,7 @@ function StatusBanner({ status }) {
       <div style={{
         textAlign:  "right",
         color:      "#475569",
-        fontSize:   10,
+        fontSize:   15,
         lineHeight: 1.8,
       }}>
         <div>SAFE: &lt; 40%</div>

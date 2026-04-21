@@ -14,7 +14,7 @@ function StatCard({ title, value, unit, sub, color, icon }) {
         <div>
           <div style={{
             color: "#64748b",
-            fontSize: 11,
+            fontSize: 15,
             marginBottom: 4,
           }}>
             {title}
@@ -39,7 +39,7 @@ function StatCard({ title, value, unit, sub, color, icon }) {
           {sub && (
             <div style={{
               color: "#475569",
-              fontSize: 10,
+              fontSize: 15,
               marginTop: 5,
             }}>
               {sub}
